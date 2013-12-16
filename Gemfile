@@ -8,7 +8,4 @@ gem 'guard-rspec'
 gem 'guard-bundler'
 gem 'terminal-notifier-guard'
 
-# develop on an edge unparser
-gem 'unparser', github: 'mbj/unparser'
-
 gemspec

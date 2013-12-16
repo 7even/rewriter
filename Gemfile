@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in rewriter.gemspec
+gem 'rake'
+gem 'rspec'
+
+# develop on an edge unparser
+gem 'unparser', github: 'mbj/unparser'
+
 gemspec

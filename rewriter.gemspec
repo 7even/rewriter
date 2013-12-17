@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rewriter::VERSION
   spec.authors       = ['Vsevolod Romashov']
   spec.email         = ['7@7vn.ru']
-  spec.description   = %q(TODO: Write a gem description)
-  spec.summary       = %q(TODO: Write a gem summary)
+  spec.description   = %q(Ruby code rewriter. Currently just a proof of concept.)
+  spec.summary       = %q(A simple utility to parse and reconstruct ruby code to maintain a given coding style. Currently just a proof of concept.)
   spec.homepage      = ''
   spec.license       = 'MIT'
   

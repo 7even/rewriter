@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['7@7vn.ru']
   spec.description   = %q(Ruby code rewriter. Currently just a proof of concept.)
   spec.summary       = %q(A simple utility to parse and reconstruct ruby code to maintain a given coding style. Currently just a proof of concept.)
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/7even/rewriter'
   spec.license       = 'MIT'
   
   spec.files         = `git ls-files`.split($/)

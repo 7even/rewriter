@@ -1,27 +1,23 @@
 # Rewriter
 
-TODO: Write a gem description
+A simple utility to parse and reconstruct ruby code to maintain a given coding style.
+
+Currently just a proof of concept.
 
 ## Installation
 
-``` ruby
-# Gemfile
-gem 'rewriter'
-```
-
-``` sh
-$ bundle
-```
-
-or
-
 ``` sh
 $ gem install rewriter
+$ rbenv rehash # if you're using rbenv
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+``` sh
+$ rewrite foo.rb
+```
+
+NOTE: `rewrite` literally rewrites the file in place; use it with a control version system like [git](http://git-scm.com) so you can revert the changes.
 
 ## Contributing
 

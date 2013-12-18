@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'rewriter'
+require 'slop'
+require 'colored'
+
+opts = Slop.parse(help: true) do
+  banner 'Usage: rewrite foo.rb'
+  
+  run do |opts, args|
+    args.each do |path|
+      if File.exists?(path)
+        Rewriter.rewrite(path)
+        puts "File #{path} was processed.".green
+      else
+        puts "File #{path} was not found.".red
+      end
+    end
+  end
+end

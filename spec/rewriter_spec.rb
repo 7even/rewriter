@@ -15,7 +15,7 @@ describe Rewriter do
       Rewriter.rewrite(file_path)
       
       rewritten = File.read(file_path)
-      expect(rewritten).to eq('some.ruby(:code, {:ugly => true})')
+      expect(rewritten).to eq("some.ruby(:code, {:ugly => true})\n")
     end
   end
 end

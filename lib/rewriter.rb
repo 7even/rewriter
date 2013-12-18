@@ -19,6 +19,7 @@ module Rewriter
       temp_path = "#{path}.rewritten"
       ::File.open(temp_path, 'w') do |temp_file|
         temp_file.write(rewritten)
+        temp_file.puts unless rewritten.end_with?(?\n)
       end
       
       ::File.rename(temp_path, path)

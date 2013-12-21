@@ -6,6 +6,11 @@ require 'colored'
 opts = Slop.parse(help: true) do
   banner 'Usage: rewrite foo.rb'
   
+  option :v, :version, 'Show the version number.' do
+    puts "Rewriter v#{Rewriter::VERSION}"
+    exit
+  end
+  
   run do |opts, args|
     args.each do |path|
       if File.exists?(path)
